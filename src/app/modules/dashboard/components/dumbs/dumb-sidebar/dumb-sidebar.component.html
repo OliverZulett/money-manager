@@ -1,0 +1,16 @@
+<div class="h-full bg-base-100 rounded-box shadow-xl">
+  <div class="flex justify-start pt-5 pb-1 pl-6">
+    <p class="text-xl font-semibold">Money Manager</p>
+  </div>
+  <div class="h-[93%] overflow-y-auto">
+    <ul class="menu w-56 p-2 rounded-box">
+      <li *ngFor="let menuItem of menuItems" class="pb-1">
+        <a
+          [routerLink]="[menuItem.link]"
+          routerLinkActive="bg-primary text-white"
+          ><i [class]="['fa-solid', menuItem.icon]"></i>{{ menuItem.label }}</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>

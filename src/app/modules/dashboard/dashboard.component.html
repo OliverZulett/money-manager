@@ -1,0 +1,15 @@
+<div class="h-screen flex">
+  <div class="flex-none py-3 pl-3">
+    <mm-smart-sidebar></mm-smart-sidebar>
+  </div>
+  <div class="grow flex p-3 flex-col h-full overflow-hidden">
+    <mm-smart-toolbar></mm-smart-toolbar>
+    <div class="grow pt-3 h-[90%]">
+      <div class="bg-base-100 h-full rounded-box shadow-lg p-3">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+
+<mm-footer></mm-footer>
